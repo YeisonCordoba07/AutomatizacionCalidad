@@ -20,7 +20,7 @@ import org.openqa.selenium.WebDriver;
 @RunWith(Cucumber.class)
 public class FHStepDefinitionsTest {
 
-    @Managed(driver="amazon")
+    @Managed(driver="chrome")
     public WebDriver driver;
     private Actor usuario = Actor.named("cosme");
 
