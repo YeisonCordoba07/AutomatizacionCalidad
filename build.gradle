@@ -1,0 +1,62 @@
+buildscript{
+    repositories{
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies{"net.serenity-bdd:serenity-gradle-plugin:1.9.9"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+group = 'udea'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+ext{
+    serenityVersion = '2.0.16'
+    serenityCucumberVersion = '1.9.51'
+}
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    //testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    //testImplementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serentiyVersion"
+    //implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
+    //implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
+    //implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    //implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'org.assertj:assertj-core:3.9.1'
+    testImplementation 'org.slf4j:slf4j-simple:1.7.21'
+
+
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-core
+    implementation 'net.serenity-bdd:serenity-core:4.0.21'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-junit
+    implementation 'net.serenity-bdd:serenity-junit:4.0.21'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-screenplay
+    implementation 'net.serenity-bdd:serenity-screenplay:4.0.21'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-screenplay-webdriver
+    implementation 'net.serenity-bdd:serenity-screenplay-webdriver:4.0.21'
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-cucumber
+    testImplementation 'net.serenity-bdd:serenity-cucumber:4.0.21'
+
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-screenplay-rest
+    implementation 'net.serenity-bdd:serenity-screenplay-rest:4.0.21'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
