@@ -1,5 +1,6 @@
 package com.amazon.certificacion.calidad.stepdefinitions;
 
+import com.amazon.certificacion.calidad.questions.Validacion;
 import com.amazon.certificacion.calidad.tasks.OpenThe;
 import com.amazon.certificacion.calidad.userinterfaces.UsuarioPage;
 import io.cucumber.java.Before;
@@ -16,6 +17,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.core.IsEqual.equalTo;
 
 @RunWith(Cucumber.class)
 public class FHStepDefinitionsTest {
@@ -48,7 +52,7 @@ public class FHStepDefinitionsTest {
 
     @Then("puedo ver una lista de resultados")
     public void listaResultados(){
-
+        usuario.should(seeThat(Validacion.theHomePage(), equalTo(true)));
     }
 
 
