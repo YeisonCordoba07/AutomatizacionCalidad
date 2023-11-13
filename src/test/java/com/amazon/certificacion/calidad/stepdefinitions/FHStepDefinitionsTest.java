@@ -36,6 +36,7 @@ public class FHStepDefinitionsTest {
 
     @Given("que me encuentro en la pagina principal de amazon")
     public void paginaPrincipal(){
+
         usuario.can(BrowseTheWeb.with(driver));
     }
 
@@ -52,6 +53,7 @@ public class FHStepDefinitionsTest {
 
     @Then("puedo ver una lista de resultados")
     public void listaResultados(){
+
         usuario.should(seeThat(Validacion.theHomePage(), equalTo(true)));
     }
 
