@@ -10,7 +10,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features="src/test/resources/features/find_amazon_homepage.feature",
         glue="com.amazon.certificacion.calidad.stepdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        plugin = {
+                "pretty"
+        }
 )
 public class FindHomePageTest {
 

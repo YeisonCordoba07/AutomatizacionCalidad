@@ -4,7 +4,6 @@ import com.amazon.certificacion.calidad.questions.Validacion;
 import com.amazon.certificacion.calidad.tasks.OpenThe;
 import com.amazon.certificacion.calidad.userinterfaces.UsuarioPage;
 import io.cucumber.java.Before;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -31,31 +30,22 @@ public class FHStepDefinitionsTest {
     @Before
     public void preStep(){
         driver.manage().window().maximize();
-        usuario.can(BrowseTheWeb.with(driver));
+        //usuario.can(BrowseTheWeb.with(driver));
     }
 
     @Given("que me encuentro en la pagina principal de amazon")
     public void paginaPrincipal(){
-
         usuario.can(BrowseTheWeb.with(driver));
     }
 
-    @When("escriba el nombre de un producto")
+    @When("busque un producto y lo seleccione y lo agregue al carrito")
     public void nombreProducto(){
         usuario.attemptsTo(OpenThe.Browser(new UsuarioPage()));
-
     }
 
-    @And("de enter o click en el boton de buscar")
-    public void buscar() {
-
-    }
-
-    @Then("puedo ver una lista de resultados")
+    @Then("puedo ver como el numero de productos en el carrito cambia")
     public void listaResultados(){
-
         usuario.should(seeThat(Validacion.theHomePage(), equalTo(true)));
     }
-
 
 }

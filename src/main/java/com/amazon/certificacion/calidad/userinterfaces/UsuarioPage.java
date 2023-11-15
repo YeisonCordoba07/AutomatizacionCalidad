@@ -10,5 +10,4 @@ public class UsuarioPage extends PageObject {
     public static final Target BUTTON_ADDTOCARD = Target.the("Boton agregar").located(By.xpath("//*[@id=\'add-to-cart-button\']"));
     public static final Target CARRITO = Target.the("Carrito").located(By.xpath("//*[@id=\'nav-cart-count\']"));
 
-    public static final Target TEXT_VALIDATION = Target.the("Texto de amazon").located(By.xpath("//*[@id=\'productTitle\']"));
 }
