@@ -13,7 +13,7 @@ public class Validacion implements Question<Boolean> {
         String stringTemporal = Text.of(TEXTO_EXITO).answeredBy(actor);
         System.out.println("string"+stringTemporal);
 
-        if(stringTemporal.equalsIgnoreCase("Exito alM crear el grupo")){
+        if(stringTemporal.equalsIgnoreCase("Exito al crear el grupo")){
             System.out.println("Exito");
             return true;
         }

@@ -1,11 +1,11 @@
 package com.amazon.certificacion.calidad.tasks;
 
+import com.amazon.certificacion.calidad.interactions.ConfigurarCriteriosPage;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
-import com.amazon.certificacion.calidad.interactions.AmazonHomePage;
 
 public class OpenThe implements Task {
 
@@ -23,7 +23,7 @@ public class OpenThe implements Task {
         actor.attemptsTo(Open.browserOn(page));
 
         // Utiliza la interacción personalizada AmazonHomePage.go() para realizar acciones específicas en la página de inicio de Amazon
-        actor.attemptsTo(AmazonHomePage.go());
+        actor.attemptsTo(ConfigurarCriteriosPage.go());
     }
 
     // Método estático para obtener una instancia de la tarea OpenThe, configurada con la página indicada

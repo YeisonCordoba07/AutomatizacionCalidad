@@ -6,12 +6,11 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import org.openqa.selenium.Keys;
 
 import static com.amazon.certificacion.calidad.userinterfaces.UsuarioPage.*;
 
 
-public class AmazonHomePage implements Interaction {
+public class ConfigurarCriteriosPage implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Enter.theValue("Grupo 2023-2").into(UsuarioPage.INPUT_NOMBRE));
@@ -21,8 +20,8 @@ public class AmazonHomePage implements Interaction {
         //actor.attemptsTo(Click.on(BUTTON_ADDTOCARD));
     }
 
-    public static AmazonHomePage go(){
+    public static ConfigurarCriteriosPage go(){
 
-        return Tasks.instrumented(AmazonHomePage.class);
+        return Tasks.instrumented(ConfigurarCriteriosPage.class);
     }
 }

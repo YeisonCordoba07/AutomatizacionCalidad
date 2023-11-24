@@ -11,7 +11,7 @@ net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)&
 net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:213)&#13;
 net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)&#13;
 net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:92)&#13;
-com.amazon.certificacion.calidad.interactions.AmazonHomePage.performAs(AmazonHomePage.java:19)&#13;
+com.amazon.certificacion.calidad.interactions.ConfigurarCriteriosPage.performAs(AmazonHomePage.java:19)&#13;
 net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:519)&#13;
 net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:499)&#13;
 net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:471)&#13;
