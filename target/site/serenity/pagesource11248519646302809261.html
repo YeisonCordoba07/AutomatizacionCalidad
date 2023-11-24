@@ -1,0 +1,1282 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width"&gt;<br/>
+  &lt;meta name="next-head-count" content="2"&gt;<br/>
+  &lt;noscript data-n-css=""&gt;&lt;/noscript&gt;<br/>
+  &lt;script defer nomodule="" src="/_next/static/chunks/polyfills.js?ts=1700787934267"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/webpack.js?ts=1700787934267" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/main.js?ts=1700787934267" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/pages/_app.js?ts=1700787934267" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/pages/ClasificacionSocios/M2ConfigurarCriterios.js?ts=1700787934267" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/development/_buildManifest.js?ts=1700787934267" defer&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/development/_ssgManifest.js?ts=1700787934267" defer&gt;&lt;/script&gt;<br/>
+  &lt;style&gt;/*<br/>
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com<br/>
+*//*<br/>
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)<br/>
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)<br/>
+*/<br/>
+<br/>
+*,<br/>
+::before,<br/>
+::after {<br/>
+  box-sizing: border-box; /* 1 */<br/>
+  border-width: 0; /* 2 */<br/>
+  border-style: solid; /* 2 */<br/>
+  border-color: #e5e7eb; /* 2 */<br/>
+}<br/>
+<br/>
+::before,<br/>
+::after {<br/>
+  --tw-content: '';<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Use a consistent sensible line-height in all browsers.<br/>
+2. Prevent adjustments of font size after orientation changes in iOS.<br/>
+3. Use a more readable tab size.<br/>
+4. Use the user's configured `sans` font-family by default.<br/>
+5. Use the user's configured `sans` font-feature-settings by default.<br/>
+6. Use the user's configured `sans` font-variation-settings by default.<br/>
+*/<br/>
+<br/>
+html {<br/>
+  line-height: 1.5; /* 1 */<br/>
+  -webkit-text-size-adjust: 100%; /* 2 */<br/>
+  -moz-tab-size: 4; /* 3 */<br/>
+  -o-tab-size: 4;<br/>
+     tab-size: 4; /* 3 */<br/>
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */<br/>
+  font-feature-settings: normal; /* 5 */<br/>
+  font-variation-settings: normal; /* 6 */<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Remove the margin in all browsers.<br/>
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.<br/>
+*/<br/>
+<br/>
+body {<br/>
+  margin: 0; /* 1 */<br/>
+  line-height: inherit; /* 2 */<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Add the correct height in Firefox.<br/>
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)<br/>
+3. Ensure horizontal rules are visible by default.<br/>
+*/<br/>
+<br/>
+hr {<br/>
+  height: 0; /* 1 */<br/>
+  color: inherit; /* 2 */<br/>
+  border-top-width: 1px; /* 3 */<br/>
+}<br/>
+<br/>
+/*<br/>
+Add the correct text decoration in Chrome, Edge, and Safari.<br/>
+*/<br/>
+<br/>
+abbr:where([title]) {<br/>
+  -webkit-text-decoration: underline dotted;<br/>
+          text-decoration: underline dotted;<br/>
+}<br/>
+<br/>
+/*<br/>
+Remove the default font size and weight for headings.<br/>
+*/<br/>
+<br/>
+h1,<br/>
+h2,<br/>
+h3,<br/>
+h4,<br/>
+h5,<br/>
+h6 {<br/>
+  font-size: inherit;<br/>
+  font-weight: inherit;<br/>
+}<br/>
+<br/>
+/*<br/>
+Reset links to optimize for opt-in styling instead of opt-out.<br/>
+*/<br/>
+<br/>
+a {<br/>
+  color: inherit;<br/>
+  text-decoration: inherit;<br/>
+}<br/>
+<br/>
+/*<br/>
+Add the correct font weight in Edge and Safari.<br/>
+*/<br/>
+<br/>
+b,<br/>
+strong {<br/>
+  font-weight: bolder;<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Use the user's configured `mono` font family by default.<br/>
+2. Correct the odd `em` font sizing in all browsers.<br/>
+*/<br/>
+<br/>
+code,<br/>
+kbd,<br/>
+samp,<br/>
+pre {<br/>
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */<br/>
+  font-size: 1em; /* 2 */<br/>
+}<br/>
+<br/>
+/*<br/>
+Add the correct font size in all browsers.<br/>
+*/<br/>
+<br/>
+small {<br/>
+  font-size: 80%;<br/>
+}<br/>
+<br/>
+/*<br/>
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.<br/>
+*/<br/>
+<br/>
+sub,<br/>
+sup {<br/>
+  font-size: 75%;<br/>
+  line-height: 0;<br/>
+  position: relative;<br/>
+  vertical-align: baseline;<br/>
+}<br/>
+<br/>
+sub {<br/>
+  bottom: -0.25em;<br/>
+}<br/>
+<br/>
+sup {<br/>
+  top: -0.5em;<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)<br/>
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)<br/>
+3. Remove gaps between table borders by default.<br/>
+*/<br/>
+<br/>
+table {<br/>
+  text-indent: 0; /* 1 */<br/>
+  border-color: inherit; /* 2 */<br/>
+  border-collapse: collapse; /* 3 */<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Change the font styles in all browsers.<br/>
+2. Remove the margin in Firefox and Safari.<br/>
+3. Remove default padding in all browsers.<br/>
+*/<br/>
+<br/>
+button,<br/>
+input,<br/>
+optgroup,<br/>
+select,<br/>
+textarea {<br/>
+  font-family: inherit; /* 1 */<br/>
+  font-feature-settings: inherit; /* 1 */<br/>
+  font-variation-settings: inherit; /* 1 */<br/>
+  font-size: 100%; /* 1 */<br/>
+  font-weight: inherit; /* 1 */<br/>
+  line-height: inherit; /* 1 */<br/>
+  color: inherit; /* 1 */<br/>
+  margin: 0; /* 2 */<br/>
+  padding: 0; /* 3 */<br/>
+}<br/>
+<br/>
+/*<br/>
+Remove the inheritance of text transform in Edge and Firefox.<br/>
+*/<br/>
+<br/>
+button,<br/>
+select {<br/>
+  text-transform: none;<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Correct the inability to style clickable types in iOS and Safari.<br/>
+2. Remove default button styles.<br/>
+*/<br/>
+<br/>
+button,<br/>
+[type='button'],<br/>
+[type='reset'],<br/>
+[type='submit'] {<br/>
+  -webkit-appearance: button; /* 1 */<br/>
+  background-color: transparent; /* 2 */<br/>
+  background-image: none; /* 2 */<br/>
+}<br/>
+<br/>
+/*<br/>
+Use the modern Firefox focus style for all focusable elements.<br/>
+*/<br/>
+<br/>
+:-moz-focusring {<br/>
+  outline: auto;<br/>
+}<br/>
+<br/>
+/*<br/>
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)<br/>
+*/<br/>
+<br/>
+:-moz-ui-invalid {<br/>
+  box-shadow: none;<br/>
+}<br/>
+<br/>
+/*<br/>
+Add the correct vertical alignment in Chrome and Firefox.<br/>
+*/<br/>
+<br/>
+progress {<br/>
+  vertical-align: baseline;<br/>
+}<br/>
+<br/>
+/*<br/>
+Correct the cursor style of increment and decrement buttons in Safari.<br/>
+*/<br/>
+<br/>
+::-webkit-inner-spin-button,<br/>
+::-webkit-outer-spin-button {<br/>
+  height: auto;<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Correct the odd appearance in Chrome and Safari.<br/>
+2. Correct the outline style in Safari.<br/>
+*/<br/>
+<br/>
+[type='search'] {<br/>
+  -webkit-appearance: textfield; /* 1 */<br/>
+  outline-offset: -2px; /* 2 */<br/>
+}<br/>
+<br/>
+/*<br/>
+Remove the inner padding in Chrome and Safari on macOS.<br/>
+*/<br/>
+<br/>
+::-webkit-search-decoration {<br/>
+  -webkit-appearance: none;<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Correct the inability to style clickable types in iOS and Safari.<br/>
+2. Change font properties to `inherit` in Safari.<br/>
+*/<br/>
+<br/>
+::-webkit-file-upload-button {<br/>
+  -webkit-appearance: button; /* 1 */<br/>
+  font: inherit; /* 2 */<br/>
+}<br/>
+<br/>
+/*<br/>
+Add the correct display in Chrome and Safari.<br/>
+*/<br/>
+<br/>
+summary {<br/>
+  display: list-item;<br/>
+}<br/>
+<br/>
+/*<br/>
+Removes the default spacing and border for appropriate elements.<br/>
+*/<br/>
+<br/>
+blockquote,<br/>
+dl,<br/>
+dd,<br/>
+h1,<br/>
+h2,<br/>
+h3,<br/>
+h4,<br/>
+h5,<br/>
+h6,<br/>
+hr,<br/>
+figure,<br/>
+p,<br/>
+pre {<br/>
+  margin: 0;<br/>
+}<br/>
+<br/>
+fieldset {<br/>
+  margin: 0;<br/>
+  padding: 0;<br/>
+}<br/>
+<br/>
+legend {<br/>
+  padding: 0;<br/>
+}<br/>
+<br/>
+ol,<br/>
+ul,<br/>
+menu {<br/>
+  list-style: none;<br/>
+  margin: 0;<br/>
+  padding: 0;<br/>
+}<br/>
+<br/>
+/*<br/>
+Reset default styling for dialogs.<br/>
+*/<br/>
+dialog {<br/>
+  padding: 0;<br/>
+}<br/>
+<br/>
+/*<br/>
+Prevent resizing textareas horizontally by default.<br/>
+*/<br/>
+<br/>
+textarea {<br/>
+  resize: vertical;<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)<br/>
+2. Set the default placeholder color to the user's configured gray 400 color.<br/>
+*/<br/>
+<br/>
+input::-moz-placeholder, textarea::-moz-placeholder {<br/>
+  opacity: 1; /* 1 */<br/>
+  color: #9ca3af; /* 2 */<br/>
+}<br/>
+<br/>
+input::placeholder,<br/>
+textarea::placeholder {<br/>
+  opacity: 1; /* 1 */<br/>
+  color: #9ca3af; /* 2 */<br/>
+}<br/>
+<br/>
+/*<br/>
+Set the default cursor for buttons.<br/>
+*/<br/>
+<br/>
+button,<br/>
+[role="button"] {<br/>
+  cursor: pointer;<br/>
+}<br/>
+<br/>
+/*<br/>
+Make sure disabled buttons don't get the pointer cursor.<br/>
+*/<br/>
+:disabled {<br/>
+  cursor: default;<br/>
+}<br/>
+<br/>
+/*<br/>
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)<br/>
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)<br/>
+   This can trigger a poorly considered lint error in some tools but is included by design.<br/>
+*/<br/>
+<br/>
+img,<br/>
+svg,<br/>
+video,<br/>
+canvas,<br/>
+audio,<br/>
+iframe,<br/>
+embed,<br/>
+object {<br/>
+  display: block; /* 1 */<br/>
+  vertical-align: middle; /* 2 */<br/>
+}<br/>
+<br/>
+/*<br/>
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)<br/>
+*/<br/>
+<br/>
+img,<br/>
+video {<br/>
+  max-width: 100%;<br/>
+  height: auto;<br/>
+}<br/>
+<br/>
+/* Make elements with the HTML hidden attribute stay hidden by default */<br/>
+[hidden] {<br/>
+  display: none;<br/>
+}<br/>
+<br/>
+*, ::before, ::after {<br/>
+  --tw-border-spacing-x: 0;<br/>
+  --tw-border-spacing-y: 0;<br/>
+  --tw-translate-x: 0;<br/>
+  --tw-translate-y: 0;<br/>
+  --tw-rotate: 0;<br/>
+  --tw-skew-x: 0;<br/>
+  --tw-skew-y: 0;<br/>
+  --tw-scale-x: 1;<br/>
+  --tw-scale-y: 1;<br/>
+  --tw-pan-x:  ;<br/>
+  --tw-pan-y:  ;<br/>
+  --tw-pinch-zoom:  ;<br/>
+  --tw-scroll-snap-strictness: proximity;<br/>
+  --tw-gradient-from-position:  ;<br/>
+  --tw-gradient-via-position:  ;<br/>
+  --tw-gradient-to-position:  ;<br/>
+  --tw-ordinal:  ;<br/>
+  --tw-slashed-zero:  ;<br/>
+  --tw-numeric-figure:  ;<br/>
+  --tw-numeric-spacing:  ;<br/>
+  --tw-numeric-fraction:  ;<br/>
+  --tw-ring-inset:  ;<br/>
+  --tw-ring-offset-width: 0px;<br/>
+  --tw-ring-offset-color: #fff;<br/>
+  --tw-ring-color: rgb(59 130 246 / 0.5);<br/>
+  --tw-ring-offset-shadow: 0 0 #0000;<br/>
+  --tw-ring-shadow: 0 0 #0000;<br/>
+  --tw-shadow: 0 0 #0000;<br/>
+  --tw-shadow-colored: 0 0 #0000;<br/>
+  --tw-blur:  ;<br/>
+  --tw-brightness:  ;<br/>
+  --tw-contrast:  ;<br/>
+  --tw-grayscale:  ;<br/>
+  --tw-hue-rotate:  ;<br/>
+  --tw-invert:  ;<br/>
+  --tw-saturate:  ;<br/>
+  --tw-sepia:  ;<br/>
+  --tw-drop-shadow:  ;<br/>
+  --tw-backdrop-blur:  ;<br/>
+  --tw-backdrop-brightness:  ;<br/>
+  --tw-backdrop-contrast:  ;<br/>
+  --tw-backdrop-grayscale:  ;<br/>
+  --tw-backdrop-hue-rotate:  ;<br/>
+  --tw-backdrop-invert:  ;<br/>
+  --tw-backdrop-opacity:  ;<br/>
+  --tw-backdrop-saturate:  ;<br/>
+  --tw-backdrop-sepia:  ;<br/>
+}<br/>
+<br/>
+::backdrop {<br/>
+  --tw-border-spacing-x: 0;<br/>
+  --tw-border-spacing-y: 0;<br/>
+  --tw-translate-x: 0;<br/>
+  --tw-translate-y: 0;<br/>
+  --tw-rotate: 0;<br/>
+  --tw-skew-x: 0;<br/>
+  --tw-skew-y: 0;<br/>
+  --tw-scale-x: 1;<br/>
+  --tw-scale-y: 1;<br/>
+  --tw-pan-x:  ;<br/>
+  --tw-pan-y:  ;<br/>
+  --tw-pinch-zoom:  ;<br/>
+  --tw-scroll-snap-strictness: proximity;<br/>
+  --tw-gradient-from-position:  ;<br/>
+  --tw-gradient-via-position:  ;<br/>
+  --tw-gradient-to-position:  ;<br/>
+  --tw-ordinal:  ;<br/>
+  --tw-slashed-zero:  ;<br/>
+  --tw-numeric-figure:  ;<br/>
+  --tw-numeric-spacing:  ;<br/>
+  --tw-numeric-fraction:  ;<br/>
+  --tw-ring-inset:  ;<br/>
+  --tw-ring-offset-width: 0px;<br/>
+  --tw-ring-offset-color: #fff;<br/>
+  --tw-ring-color: rgb(59 130 246 / 0.5);<br/>
+  --tw-ring-offset-shadow: 0 0 #0000;<br/>
+  --tw-ring-shadow: 0 0 #0000;<br/>
+  --tw-shadow: 0 0 #0000;<br/>
+  --tw-shadow-colored: 0 0 #0000;<br/>
+  --tw-blur:  ;<br/>
+  --tw-brightness:  ;<br/>
+  --tw-contrast:  ;<br/>
+  --tw-grayscale:  ;<br/>
+  --tw-hue-rotate:  ;<br/>
+  --tw-invert:  ;<br/>
+  --tw-saturate:  ;<br/>
+  --tw-sepia:  ;<br/>
+  --tw-drop-shadow:  ;<br/>
+  --tw-backdrop-blur:  ;<br/>
+  --tw-backdrop-brightness:  ;<br/>
+  --tw-backdrop-contrast:  ;<br/>
+  --tw-backdrop-grayscale:  ;<br/>
+  --tw-backdrop-hue-rotate:  ;<br/>
+  --tw-backdrop-invert:  ;<br/>
+  --tw-backdrop-opacity:  ;<br/>
+  --tw-backdrop-saturate:  ;<br/>
+  --tw-backdrop-sepia:  ;<br/>
+}<br/>
+.fixed {<br/>
+  position: fixed;<br/>
+}<br/>
+.relative {<br/>
+  position: relative;<br/>
+}<br/>
+.top-0 {<br/>
+  top: 0px;<br/>
+}<br/>
+.m-auto {<br/>
+  margin: auto;<br/>
+}<br/>
+.mb-10 {<br/>
+  margin-bottom: 2.5rem;<br/>
+}<br/>
+.mt-10 {<br/>
+  margin-top: 2.5rem;<br/>
+}<br/>
+.mt-20 {<br/>
+  margin-top: 5rem;<br/>
+}<br/>
+.inline {<br/>
+  display: inline;<br/>
+}<br/>
+.flex {<br/>
+  display: flex;<br/>
+}<br/>
+.table {<br/>
+  display: table;<br/>
+}<br/>
+.grid {<br/>
+  display: grid;<br/>
+}<br/>
+.hidden {<br/>
+  display: none;<br/>
+}<br/>
+.h-10 {<br/>
+  height: 2.5rem;<br/>
+}<br/>
+.h-16 {<br/>
+  height: 4rem;<br/>
+}<br/>
+.h-56 {<br/>
+  height: 14rem;<br/>
+}<br/>
+.h-8 {<br/>
+  height: 2rem;<br/>
+}<br/>
+.h-\[130px\] {<br/>
+  height: 130px;<br/>
+}<br/>
+.h-full {<br/>
+  height: 100%;<br/>
+}<br/>
+.h-screen {<br/>
+  height: 100vh;<br/>
+}<br/>
+.w-10 {<br/>
+  width: 2.5rem;<br/>
+}<br/>
+.w-4\/5 {<br/>
+  width: 80%;<br/>
+}<br/>
+.w-96 {<br/>
+  width: 24rem;<br/>
+}<br/>
+.w-\[1400px\] {<br/>
+  width: 1400px;<br/>
+}<br/>
+.w-\[226px\] {<br/>
+  width: 226px;<br/>
+}<br/>
+.w-\[320px\] {<br/>
+  width: 320px;<br/>
+}<br/>
+.w-full {<br/>
+  width: 100%;<br/>
+}<br/>
+.w-min {<br/>
+  width: -moz-min-content;<br/>
+  width: min-content;<br/>
+}<br/>
+.w-screen {<br/>
+  width: 100vw;<br/>
+}<br/>
+.min-w-min {<br/>
+  min-width: -moz-min-content;<br/>
+  min-width: min-content;<br/>
+}<br/>
+.flex-1 {<br/>
+  flex: 1 1 0%;<br/>
+}<br/>
+.flex-grow {<br/>
+  flex-grow: 1;<br/>
+}<br/>
+.cursor-pointer {<br/>
+  cursor: pointer;<br/>
+}<br/>
+.grid-cols-2 {<br/>
+  grid-template-columns: repeat(2, minmax(0, 1fr));<br/>
+}<br/>
+.flex-row {<br/>
+  flex-direction: row;<br/>
+}<br/>
+.flex-col {<br/>
+  flex-direction: column;<br/>
+}<br/>
+.flex-wrap {<br/>
+  flex-wrap: wrap;<br/>
+}<br/>
+.items-start {<br/>
+  align-items: flex-start;<br/>
+}<br/>
+.items-center {<br/>
+  align-items: center;<br/>
+}<br/>
+.justify-start {<br/>
+  justify-content: flex-start;<br/>
+}<br/>
+.justify-center {<br/>
+  justify-content: center;<br/>
+}<br/>
+.justify-between {<br/>
+  justify-content: space-between;<br/>
+}<br/>
+.justify-evenly {<br/>
+  justify-content: space-evenly;<br/>
+}<br/>
+.gap-1 {<br/>
+  gap: 0.25rem;<br/>
+}<br/>
+.gap-10 {<br/>
+  gap: 2.5rem;<br/>
+}<br/>
+.gap-16 {<br/>
+  gap: 4rem;<br/>
+}<br/>
+.gap-2 {<br/>
+  gap: 0.5rem;<br/>
+}<br/>
+.gap-20 {<br/>
+  gap: 5rem;<br/>
+}<br/>
+.gap-3 {<br/>
+  gap: 0.75rem;<br/>
+}<br/>
+.gap-4 {<br/>
+  gap: 1rem;<br/>
+}<br/>
+.gap-5 {<br/>
+  gap: 1.25rem;<br/>
+}<br/>
+.gap-6 {<br/>
+  gap: 1.5rem;<br/>
+}<br/>
+.gap-8 {<br/>
+  gap: 2rem;<br/>
+}<br/>
+.gap-9 {<br/>
+  gap: 2.25rem;<br/>
+}<br/>
+.gap-x-12 {<br/>
+  -moz-column-gap: 3rem;<br/>
+       column-gap: 3rem;<br/>
+}<br/>
+.gap-x-20 {<br/>
+  -moz-column-gap: 5rem;<br/>
+       column-gap: 5rem;<br/>
+}<br/>
+.gap-y-20 {<br/>
+  row-gap: 5rem;<br/>
+}<br/>
+.self-stretch {<br/>
+  align-self: stretch;<br/>
+}<br/>
+.overflow-x-hidden {<br/>
+  overflow-x: hidden;<br/>
+}<br/>
+.rounded-full {<br/>
+  border-radius: 9999px;<br/>
+}<br/>
+.rounded-lg {<br/>
+  border-radius: 0.5rem;<br/>
+}<br/>
+.rounded-md {<br/>
+  border-radius: 0.375rem;<br/>
+}<br/>
+.rounded-sm {<br/>
+  border-radius: 0.125rem;<br/>
+}<br/>
+.rounded-xl {<br/>
+  border-radius: 0.75rem;<br/>
+}<br/>
+.border {<br/>
+  border-width: 1px;<br/>
+}<br/>
+.border-2 {<br/>
+  border-width: 2px;<br/>
+}<br/>
+.border-b {<br/>
+  border-bottom-width: 1px;<br/>
+}<br/>
+.border-solid {<br/>
+  border-style: solid;<br/>
+}<br/>
+.border-none {<br/>
+  border-style: none;<br/>
+}<br/>
+.border-black {<br/>
+  --tw-border-opacity: 1;<br/>
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));<br/>
+}<br/>
+.border-gray-400 {<br/>
+  --tw-border-opacity: 1;<br/>
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));<br/>
+}<br/>
+.bg-\[\#f0f0f0\] {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-black {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-blue-500 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-gray-200 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-red-300 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-sky-600 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-sky-700 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(3 105 161 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-slate-200 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-white {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-zinc-400 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(161 161 170 / var(--tw-bg-opacity));<br/>
+}<br/>
+.bg-none {<br/>
+  background-image: none;<br/>
+}<br/>
+.p-1 {<br/>
+  padding: 0.25rem;<br/>
+}<br/>
+.p-1\.5 {<br/>
+  padding: 0.375rem;<br/>
+}<br/>
+.p-3 {<br/>
+  padding: 0.75rem;<br/>
+}<br/>
+.p-5 {<br/>
+  padding: 1.25rem;<br/>
+}<br/>
+.px-0 {<br/>
+  padding-left: 0px;<br/>
+  padding-right: 0px;<br/>
+}<br/>
+.px-1 {<br/>
+  padding-left: 0.25rem;<br/>
+  padding-right: 0.25rem;<br/>
+}<br/>
+.px-2 {<br/>
+  padding-left: 0.5rem;<br/>
+  padding-right: 0.5rem;<br/>
+}<br/>
+.px-3 {<br/>
+  padding-left: 0.75rem;<br/>
+  padding-right: 0.75rem;<br/>
+}<br/>
+.px-4 {<br/>
+  padding-left: 1rem;<br/>
+  padding-right: 1rem;<br/>
+}<br/>
+.px-5 {<br/>
+  padding-left: 1.25rem;<br/>
+  padding-right: 1.25rem;<br/>
+}<br/>
+.px-7 {<br/>
+  padding-left: 1.75rem;<br/>
+  padding-right: 1.75rem;<br/>
+}<br/>
+.px-8 {<br/>
+  padding-left: 2rem;<br/>
+  padding-right: 2rem;<br/>
+}<br/>
+.px-9 {<br/>
+  padding-left: 2.25rem;<br/>
+  padding-right: 2.25rem;<br/>
+}<br/>
+.py-1 {<br/>
+  padding-top: 0.25rem;<br/>
+  padding-bottom: 0.25rem;<br/>
+}<br/>
+.py-2 {<br/>
+  padding-top: 0.5rem;<br/>
+  padding-bottom: 0.5rem;<br/>
+}<br/>
+.py-3 {<br/>
+  padding-top: 0.75rem;<br/>
+  padding-bottom: 0.75rem;<br/>
+}<br/>
+.py-32 {<br/>
+  padding-top: 8rem;<br/>
+  padding-bottom: 8rem;<br/>
+}<br/>
+.py-4 {<br/>
+  padding-top: 1rem;<br/>
+  padding-bottom: 1rem;<br/>
+}<br/>
+.py-5 {<br/>
+  padding-top: 1.25rem;<br/>
+  padding-bottom: 1.25rem;<br/>
+}<br/>
+.py-6 {<br/>
+  padding-top: 1.5rem;<br/>
+  padding-bottom: 1.5rem;<br/>
+}<br/>
+.py-7 {<br/>
+  padding-top: 1.75rem;<br/>
+  padding-bottom: 1.75rem;<br/>
+}<br/>
+.pb-10 {<br/>
+  padding-bottom: 2.5rem;<br/>
+}<br/>
+.pb-14 {<br/>
+  padding-bottom: 3.5rem;<br/>
+}<br/>
+.pb-4 {<br/>
+  padding-bottom: 1rem;<br/>
+}<br/>
+.pb-5 {<br/>
+  padding-bottom: 1.25rem;<br/>
+}<br/>
+.pl-4 {<br/>
+  padding-left: 1rem;<br/>
+}<br/>
+.pt-4 {<br/>
+  padding-top: 1rem;<br/>
+}<br/>
+.pt-6 {<br/>
+  padding-top: 1.5rem;<br/>
+}<br/>
+.pt-9 {<br/>
+  padding-top: 2.25rem;<br/>
+}<br/>
+.text-center {<br/>
+  text-align: center;<br/>
+}<br/>
+.text-2xl {<br/>
+  font-size: 1.5rem;<br/>
+  line-height: 2rem;<br/>
+}<br/>
+.text-3xl {<br/>
+  font-size: 1.875rem;<br/>
+  line-height: 2.25rem;<br/>
+}<br/>
+.text-4xl {<br/>
+  font-size: 2.25rem;<br/>
+  line-height: 2.5rem;<br/>
+}<br/>
+.text-lg {<br/>
+  font-size: 1.125rem;<br/>
+  line-height: 1.75rem;<br/>
+}<br/>
+.text-xl {<br/>
+  font-size: 1.25rem;<br/>
+  line-height: 1.75rem;<br/>
+}<br/>
+.text-xs {<br/>
+  font-size: 0.75rem;<br/>
+  line-height: 1rem;<br/>
+}<br/>
+.font-bold {<br/>
+  font-weight: 700;<br/>
+}<br/>
+.font-medium {<br/>
+  font-weight: 500;<br/>
+}<br/>
+.font-semibold {<br/>
+  font-weight: 600;<br/>
+}<br/>
+.tracking-wider {<br/>
+  letter-spacing: 0.05em;<br/>
+}<br/>
+.text-\[\#404D61\] {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(64 77 97 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-\[\#575d66\] {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(87 93 102 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-blue-500 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(59 130 246 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-gray-400 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(156 163 175 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-gray-500 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(107 114 128 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-gray-800 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(31 41 55 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-red-600 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(220 38 38 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-red-700 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(185 28 28 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-slate-300 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(203 213 225 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-white {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(255 255 255 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-green-400 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(74 222 128 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-green-500 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(34 197 94 / var(--tw-text-opacity));<br/>
+}<br/>
+.text-lime-500 {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(132 204 22 / var(--tw-text-opacity));<br/>
+}<br/>
+.shadow-lg {<br/>
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);<br/>
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);<br/>
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);<br/>
+}<br/>
+.shadow-md {<br/>
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);<br/>
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);<br/>
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);<br/>
+}<br/>
+.shadow-xl {<br/>
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);<br/>
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);<br/>
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);<br/>
+}<br/>
+.shadow-gray-300 {<br/>
+  --tw-shadow-color: #d1d5db;<br/>
+  --tw-shadow: var(--tw-shadow-colored);<br/>
+}<br/>
+.outline {<br/>
+  outline-style: solid;<br/>
+}<br/>
+.outline-1 {<br/>
+  outline-width: 1px;<br/>
+}<br/>
+.filter {<br/>
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);<br/>
+}<br/>
+<br/>
+<br/>
+.socios-table-m2 td, .socios-table-m2 th {<br/>
+  height: 4rem;<br/>
+  width: 25%;<br/>
+  padding-top: 0.75rem;<br/>
+  padding-bottom: 0.75rem;<br/>
+  padding-left: 1.5rem;<br/>
+  padding-right: 1.5rem;<br/>
+}<br/>
+<br/>
+.socios-table-m2 th {<br/>
+  text-align: start;<br/>
+  font-size: 1.25rem;<br/>
+  line-height: 1.75rem;<br/>
+  font-weight: 700;<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(0 0 0 / var(--tw-text-opacity));<br/>
+}<br/>
+<br/>
+.socios-table-m2 td {<br/>
+  font-weight: 400;<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(17 24 39 / var(--tw-text-opacity));<br/>
+}<br/>
+<br/>
+.socios-table-m2 &gt; tbody &gt; tr {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));<br/>
+}<br/>
+<br/>
+.socios-table-m2 &gt; tbody &gt; tr:hover {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));<br/>
+  transition-duration: 100ms;<br/>
+}<br/>
+<br/>
+.titles-m2 {<br/>
+  font-size: 1.875rem;<br/>
+  line-height: 2.25rem;<br/>
+  font-weight: 700;<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(55 65 81 / var(--tw-text-opacity));<br/>
+}<br/>
+<br/>
+.subtitles-m2 {<br/>
+  font-size: 1.25rem;<br/>
+  line-height: 1.75rem;<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(107 114 128 / var(--tw-text-opacity));<br/>
+}<br/>
+<br/>
+.font-m2{<br/>
+    font-family: 'Roboto';<br/>
+}<br/>
+<br/>
+#tablaSocios-m2 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));<br/>
+}<br/>
+<br/>
+<br/>
+#tablaSocios-tr-m2 {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));<br/>
+}<br/>
+<br/>
+.table-m2 {<br/>
+  width: 100%;<br/>
+  border-collapse: separate;<br/>
+  border-radius: 0.25rem;<br/>
+  border-width: 1px;<br/>
+  --tw-border-opacity: 1;<br/>
+  border-color: rgb(226 232 240 / var(--tw-border-opacity));<br/>
+  text-align: left;<br/>
+}<br/>
+<br/>
+.titles-configuracion-m2 {<br/>
+  margin-bottom: 0.5rem;<br/>
+  font-size: 1.25rem;<br/>
+  line-height: 1.75rem;<br/>
+  font-weight: 700;<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(107 114 128 / var(--tw-text-opacity));<br/>
+}<br/>
+<br/>
+.input-configuracion-m2 {<br/>
+  font-size: 1.25rem;<br/>
+  line-height: 1.75rem;<br/>
+  font-weight: 500;<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(107 114 128 / var(--tw-text-opacity));<br/>
+}<br/>
+<br/>
+.input-m2 {<br/>
+  border-radius: 0.5rem;<br/>
+  border-width: 1px;<br/>
+  --tw-border-opacity: 1;<br/>
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));<br/>
+  padding-left: 1.25rem;<br/>
+  padding-right: 1.25rem;<br/>
+  padding-top: 1.25rem;<br/>
+  padding-bottom: 1.25rem;<br/>
+}<br/>
+<br/>
+.input-m2:focus {<br/>
+  outline-color: #60a5fa;<br/>
+}<br/>
+<br/>
+.select-m2 {<br/>
+  border-radius: 0.5rem;<br/>
+  border-width: 1px;<br/>
+  --tw-border-opacity: 1;<br/>
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));<br/>
+  padding-left: 1.25rem;<br/>
+  padding-right: 1.25rem;<br/>
+  padding-top: 1.25rem;<br/>
+  padding-bottom: 1.25rem;<br/>
+}<br/>
+<br/>
+.select-m2:focus {<br/>
+  outline-color: #60a5fa;<br/>
+}<br/>
+<br/>
+.invalid\:outline-red-700:invalid {<br/>
+  outline-color: #b91c1c;<br/>
+}<br/>
+<br/>
+.hover\:scale-105:hover {<br/>
+  --tw-scale-x: 1.05;<br/>
+  --tw-scale-y: 1.05;<br/>
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));<br/>
+}<br/>
+<br/>
+.hover\:cursor-pointer:hover {<br/>
+  cursor: pointer;<br/>
+}<br/>
+<br/>
+.hover\:bg-blue-700:hover {<br/>
+  --tw-bg-opacity: 1;<br/>
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));<br/>
+}<br/>
+<br/>
+.hover\:text-gray-500:hover {<br/>
+  --tw-text-opacity: 1;<br/>
+  color: rgb(107 114 128 / var(--tw-text-opacity));<br/>
+}<br/>
+<br/>
+.hover\:duration-150:hover {<br/>
+  transition-duration: 150ms;<br/>
+}<br/>
+<br/>
+.hover\:duration-200:hover {<br/>
+  transition-duration: 200ms;<br/>
+}<br/>
+<br/>
+.focus\:outline-none:focus {<br/>
+  outline: 2px solid transparent;<br/>
+  outline-offset: 2px;<br/>
+}<br/>
+<br/>
+@media not all and (min-width: 640px) {<br/>
+<br/>
+  .max-sm\:flex-col {<br/>
+    flex-direction: column;<br/>
+  }<br/>
+<br/>
+  .max-sm\:items-center {<br/>
+    align-items: center;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media (min-width: 640px) {<br/>
+<br/>
+  .sm\:inline {<br/>
+    display: inline;<br/>
+  }<br/>
+<br/>
+  .sm\:hidden {<br/>
+    display: none;<br/>
+  }<br/>
+<br/>
+  .sm\:w-6\/12 {<br/>
+    width: 50%;<br/>
+  }<br/>
+<br/>
+  .sm\:w-full {<br/>
+    width: 100%;<br/>
+  }<br/>
+<br/>
+  .sm\:bg-slate-200 {<br/>
+    --tw-bg-opacity: 1;<br/>
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity));<br/>
+  }<br/>
+<br/>
+  .sm\:pl-8 {<br/>
+    padding-left: 2rem;<br/>
+  }<br/>
+<br/>
+  .sm\:pr-24 {<br/>
+    padding-right: 6rem;<br/>
+  }<br/>
+<br/>
+  .sm\:hover\:cursor-auto:hover {<br/>
+    cursor: auto;<br/>
+  }<br/>
+}<br/>
+<br/>
+@media (min-width: 768px) {<br/>
+<br/>
+  .md\:fixed {<br/>
+    position: fixed;<br/>
+  }<br/>
+<br/>
+  .md\:h-screen {<br/>
+    height: 100vh;<br/>
+  }<br/>
+<br/>
+  .md\:pl-12 {<br/>
+    padding-left: 3rem;<br/>
+  }<br/>
+<br/>
+  .md\:pr-36 {<br/>
+    padding-right: 9rem;<br/>
+  }<br/>
+}<br/>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zdHlsZXMvZ2xvYmFscy5jc3MiLCI8bm8gc291cmNlPiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Q0FBYyxDQUFkOzs7Q0FBYzs7QUFBZDs7O0VBQUEsc0JBQWMsRUFBZCxNQUFjO0VBQWQsZUFBYyxFQUFkLE1BQWM7RUFBZCxtQkFBYyxFQUFkLE1BQWM7RUFBZCxxQkFBYyxFQUFkLE1BQWM7QUFBQTs7QUFBZDs7RUFBQSxnQkFBYztBQUFBOztBQUFkOzs7Ozs7O0NBQWM7O0FBQWQ7RUFBQSxnQkFBYyxFQUFkLE1BQWM7RUFBZCw4QkFBYyxFQUFkLE1BQWM7RUFBZCxnQkFBYyxFQUFkLE1BQWM7RUFBZCxjQUFjO0tBQWQsV0FBYyxFQUFkLE1BQWM7RUFBZCw0TkFBYyxFQUFkLE1BQWM7RUFBZCw2QkFBYyxFQUFkLE1BQWM7RUFBZCwrQkFBYyxFQUFkLE1BQWM7QUFBQTs7QUFBZDs7O0NBQWM7O0FBQWQ7RUFBQSxTQUFjLEVBQWQsTUFBYztFQUFkLG9CQUFjLEVBQWQsTUFBYztBQUFBOztBQUFkOzs7O0NBQWM7O0FBQWQ7RUFBQSxTQUFjLEVBQWQsTUFBYztFQUFkLGNBQWMsRUFBZCxNQUFjO0VBQWQscUJBQWMsRUFBZCxNQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7RUFBQSx5Q0FBYztVQUFkLGlDQUFjO0FBQUE7O0FBQWQ7O0NBQWM7O0FBQWQ7Ozs7OztFQUFBLGtCQUFjO0VBQWQsb0JBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDtFQUFBLGNBQWM7RUFBZCx3QkFBYztBQUFBOztBQUFkOztDQUFjOztBQUFkOztFQUFBLG1CQUFjO0FBQUE7O0FBQWQ7OztDQUFjOztBQUFkOzs7O0VBQUEsK0dBQWMsRUFBZCxNQUFjO0VBQWQsY0FBYyxFQUFkLE1BQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDtFQUFBLGNBQWM7QUFBQTs7QUFBZDs7Q0FBYzs7QUFBZDs7RUFBQSxjQUFjO0VBQWQsY0FBYztFQUFkLGtCQUFjO0VBQWQs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O0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQSx1QkFBbUI7RUFBbkI7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBLDJCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBLHFCQUFtQjtPQUFuQjtBQUFtQjtBQUFuQjtFQUFBLHFCQUFtQjtPQUFuQjtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUEsc0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsc0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsa0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBLGlCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLHFCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG9CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLHFCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGtCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLHFCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLHFCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGtCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLHFCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG9CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG1CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG9CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGlCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGlCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG9CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG1CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG9CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBLGlCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG1CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGtCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLG1CQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGtCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLGtCQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsb0JBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsK0VBQW1CO0VBQW5CLG1HQUFtQjtFQUFuQjtBQUFtQjtBQUFuQjtFQUFBLDZFQUFtQjtFQUFuQixpR0FBbUI7RUFBbkI7QUFBbUI7QUFBbkI7RUFBQSxnRkFBbUI7RUFBbkIsb0dBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUEsMEJBQW1CO0VBQW5CO0FBQW1CO0FBQW5CO0VBQUE7QUFBbUI7QUFBbkI7RUFBQTtBQUFtQjtBQUFuQjtFQUFBO0FBQW1COzs7QUFJZjtFQUFBLFlBQTRCO0VBQTVCLFVBQTRCO0VBQTVCLG9CQUE0QjtFQUE1Qix1QkFBNEI7RUFBNUIsb0JBQTRCO0VBQTVCO0FBQTRCOztBQUk1QjtFQUFBLGlCQUE4QztFQUE5QyxrQkFBOEM7RUFBOUMsb0JBQThDO0VBQTlDLGdCQUE4QztFQUE5QyxvQkFBOEM7RUFBOUM7QUFBOEM7O0FBSTlDO0VBQUEsZ0JBQWdDO0VBQWhDLG9CQUFnQztFQUFoQztBQUFnQzs7QUFJaEM7RUFBQSxrQkFBMkQ7RUFBM0Q7QUFBMkQ7O0FBQTNEO0VBQUEsa0JBQTJEO0VBQTNELHlEQUEyRDtFQUEzRDtBQUEyRDs7QUFJM0Q7RUFBQSxtQkFBdUM7RUFBdkMsb0JBQXVDO0VBQXZDLGdCQUF1QztFQUF2QyxvQkFBdUM7RUFBdkM7QUFBdUM7O0FBSXZDO0VBQUEsa0JBQTRCO0VBQTVCLG9CQUE0QjtFQUE1QixvQkFBNEI7RUFBNUI7QUFBNEI7O0FBR2hDO0lBQ0kscUJBQXFCO0FBQ3pCOztBQUdJO0VBQUEsa0JBQWtCO0VBQWxCO0FBQWtCOzs7QUFLbEI7RUFBQSxrQkFBa0I7RUFBbEI7QUFBa0I7O0FBSWxCO0VBQUEsV0FBdUU7RUFBdkUseUJBQXVFO0VBQXZFLHNCQUF1RTtFQUF2RSxpQkFBdUU7RUFBdkUsc0JBQXVFO0VBQXZFLHlEQUF1RTtFQUF2RTtBQUF1RTs7QUFJdkU7RUFBQSxxQkFBMkM7RUFBM0Msa0JBQTJDO0VBQTNDLG9CQUEyQztFQUEzQyxnQkFBMkM7RUFBM0Msb0JBQTJDO0VBQTNDO0FBQTJDOztBQUkzQztFQUFBLGtCQUF3QztFQUF4QyxvQkFBd0M7RUFBeEMsZ0JBQXdDO0VBQXhDLG9CQUF3QztFQUF4QztBQUF3Qzs7QUFJeEM7RUFBQSxxQkFBeUU7RUFBekUsaUJBQXlFO0VBQXpFLHNCQUF5RTtFQUF6RSx5REFBeUU7RUFBekUscUJBQXlFO0VBQXpFLHNCQUF5RTtFQUF6RSxvQkFBeUU7RUFBekU7QUFBeUU7O0FBQXpFO0VBQUE7QUFBeUU7O0FBSXpFO0VBQUEscUJBQXlFO0VBQXpFLGlCQUF5RTtFQUF6RSxzQkFBeUU7RUFBekUseURBQXlFO0VBQXpFLHFCQUF5RTtFQUF6RSxzQkFBeUU7RUFBekUsb0JBQXlFO0VBQXpFO0FBQXlFOztBQUF6RTtFQUFBO0FBQXlFOztBQTNEN0U7RUFBQTtDQ0FBOztBREFBO0VBQUEsbUJDQUE7RURBQSxtQkNBQTtFREFBO0NDQUE7O0FEQUE7RUFBQTtDQ0FBOztBREFBO0VBQUEsbUJDQUE7RURBQTtDQ0FBOztBREFBO0VBQUEscUJDQUE7RURBQTtDQ0FBOztBREFBO0VBQUE7Q0NBQTs7QURBQTtFQUFBO0NDQUE7O0FEQUE7RUFBQSwrQkNBQTtFREFBO0NDQUE7O0FEQUE7O0VBQUE7SUFBQTtHQ0FBOztFREFBO0lBQUE7R0NBQTtDQUFBOztBREFBOztFQUFBO0lBQUE7R0NBQTs7RURBQTtJQUFBO0dDQUE7O0VEQUE7SUFBQTtHQ0FBOztFREFBO0lBQUE7R0NBQTs7RURBQTtJQUFBLG1CQ0FBO0lEQUE7R0NBQTs7RURBQTtJQUFBO0dDQUE7O0VEQUE7SUFBQTtHQ0FBOztFREFBO0lBQUE7R0NBQTtDQUFBOztBREFBOztFQUFBO0lBQUE7R0NBQTs7RURBQTtJQUFBO0dDQUE7O0VEQUE7SUFBQTtHQ0FBOztFREFBO0lBQUE7R0NBQTtDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiQHRhaWx3aW5kIGJhc2U7XHJcbkB0YWlsd2luZCBjb21wb25lbnRzO1xyXG5AdGFpbHdpbmQgdXRpbGl0aWVzO1xyXG5cclxuXHJcbi5zb2Npb3MtdGFibGUtbTIgdGQsIC5zb2Npb3MtdGFibGUtbTIgdGh7XHJcbiAgICBAYXBwbHkgIHB5LTMgdy0xLzQgcHgtNiBoLTE2O1xyXG59XHJcblxyXG4uc29jaW9zLXRhYmxlLW0yIHRoe1xyXG4gICAgQGFwcGx5IHRleHQtYmxhY2sgZm9udC1ib2xkIHRleHQtc3RhcnQgdGV4dC14bDtcclxufVxyXG5cclxuLnNvY2lvcy10YWJsZS1tMiB0ZHtcclxuICAgIEBhcHBseSB0ZXh0LWdyYXktOTAwIGZvbnQtbm9ybWFsO1xyXG59XHJcblxyXG4uc29jaW9zLXRhYmxlLW0yID4gdGJvZHkgPiB0cntcclxuICAgIEBhcHBseSBob3ZlcjpiZy1zbGF0ZS0zMDAgaG92ZXI6ZHVyYXRpb24tMTAwIGJnLW5ldXRyYWwtMjAwO1xyXG59XHJcblxyXG4udGl0bGVzLW0ye1xyXG4gICAgQGFwcGx5IHRleHQtM3hsIGZvbnQtYm9sZCB0ZXh0LWdyYXktNzAwO1xyXG59XHJcblxyXG4uc3VidGl0bGVzLW0ye1xyXG4gICAgQGFwcGx5IHRleHQteGwgdGV4dC1ncmF5LTUwMDtcclxufVxyXG5cclxuLmZvbnQtbTJ7XHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90byc7XHJcbn1cclxuXHJcbiN0YWJsYVNvY2lvcy1tMntcclxuICAgIEBhcHBseSBiZy1ibHVlLTIwMDtcclxufVxyXG5cclxuXHJcbiN0YWJsYVNvY2lvcy10ci1tMntcclxuICAgIEBhcHBseSBiZy1ibHVlLTEwMDtcclxufVxyXG5cclxuLnRhYmxlLW0yIHtcclxuICAgIEBhcHBseSB3LWZ1bGwgdGV4dC1sZWZ0IGJvcmRlciBib3JkZXItc2VwYXJhdGUgcm91bmRlZCBib3JkZXItc2xhdGUtMjAwO1xyXG59XHJcblxyXG4udGl0bGVzLWNvbmZpZ3VyYWNpb24tbTJ7XHJcbiAgICBAYXBwbHkgZm9udC1ib2xkIHRleHQteGwgbWItMiB0ZXh0LWdyYXktNTAwO1xyXG59XHJcblxyXG4uaW5wdXQtY29uZmlndXJhY2lvbi1tMntcclxuICAgIEBhcHBseSB0ZXh0LXhsIHRleHQtZ3JheS01MDAgZm9udC1tZWRpdW07XHJcbn1cclxuXHJcbi5pbnB1dC1tMntcclxuICAgIEBhcHBseSBib3JkZXIgYm9yZGVyLWdyYXktMzAwIHB4LTUgcHktNSByb3VuZGVkLWxnIGZvY3VzOm91dGxpbmUtYmx1ZS00MDA7XHJcbn1cclxuXHJcbi5zZWxlY3QtbTJ7XHJcbiAgICBAYXBwbHkgYm9yZGVyIGJvcmRlci1ncmF5LTMwMCBweC01IHB5LTUgcm91bmRlZC1sZyBmb2N1czpvdXRsaW5lLWJsdWUtNDAwO1xyXG59IixudWxsXSwic291cmNlUm9vdCI6IiJ9 */&lt;/style&gt;<br/>
+  &lt;noscript id="__next_css__DO_NOT_USE__"&gt;&lt;/noscript&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;<br/>
+  &lt;div id="__next"&gt;<br/>
+   &lt;div class="w-screen h-screen bg-white"&gt;<br/>
+    &lt;div class="flex w-[1400px] h-screen bg-white m-auto"&gt;<br/>
+     &lt;div class="flex flex-col w-[320px] bg-gray-200 h-full items-center gap-16 font-m2 relative"&gt;<br/>
+      &lt;div class="flex flex-col top-0  h-screen bg-gray-200 w-[320px] items-center gap-16 font-m2 px-5 py-5 fixed shadow-lg"&gt;<br/>
+       &lt;div class="flex gap-8 w-full justify-center items-center"&gt;<br/>
+        &lt;img alt="Imagen de https://www.freepik.es/psd-gratis/ilustracion-3d-avatar-o-perfil-humano_58509044.htm#query=perfil&amp;position=6&amp;from_view=search&amp;track=sph&amp;uuid=3bc88515-3bfd-4306-aad5-b502240f7a72 Freepik" loading="lazy" width="60" height="50" decoding="async" data-nimg="1" class="rounded-full h-full shadow-lg" style="color:transparent" src="/perfil-freepik.jpg"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;span class="text-gray-500"&gt;Welcome back,&lt;/span&gt;<br/>
+         &lt;h3 class="font-bold text-2xl text-gray-800"&gt;Admin.&lt;/h3&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="flex flex-col items-center gap-4 w-full"&gt;<br/>
+        &lt;a class="flex gap-1 w-full justify-between items-center p-3 bg-white rounded-lg hover:scale-105 hover:duration-200 shadow-md" href="/ClasificacionSocios/M2ConfigurarCriterios"&gt;<br/>
+         &lt;svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 256 256" class="w-10 h-8  text-gray-400" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"&gt;<br/>
+          &lt;path d="M104,40H56A16,16,0,0,0,40,56v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,104,40Zm0,64H56V56h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,64H152V56h48v48Zm-96,32H56a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,104,136Zm0,64H56V152h48v48Zm96-64H152a16,16,0,0,0-16,16v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V152A16,16,0,0,0,200,136Zm0,64H152V152h48v48Z"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;span class="text-gray-500 text-xl w-4/5 text-center"&gt;Configurar Criterios&lt;/span&gt;<br/>
+         &lt;svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 24 24" class="w-10  h-8  text-gray-400 font-bold" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"&gt;<br/>
+          &lt;path fill="none" d="M0 0h24v24H0z"&gt;&lt;/path&gt;&lt;path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;/a&gt;&lt;a class="flex gap-1 w-full justify-between items-center p-3 bg-white rounded-lg hover:scale-105 hover:duration-200 shadow-md" href="/ClasificacionSocios/M2VisualizarGrupos"&gt;<br/>
+         &lt;svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 24 24" class="w-10 h-8  text-gray-400" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"&gt;<br/>
+          &lt;path fill="none" d="M0 0h24v24H0z"&gt;&lt;/path&gt;&lt;path d="M3 5v14a2 2 0 002 2h6V3H5a2 2 0 00-2 2zm6 14H5V5h4v14zM19 3h-6v8h8V5c0-1.1-.9-2-2-2zm0 6h-4V5h4v4zM13 21h6c1.1 0 2-.9 2-2v-6h-8v8zm2-6h4v4h-4v-4z"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;span class="text-gray-500 text-xl w-4/5 text-center"&gt;Visualizar Grupos&lt;/span&gt;<br/>
+         &lt;svg stroke="currentColor" fill="currentColor" stroke-width="0" viewbox="0 0 24 24" class="w-10  h-8  text-gray-400 font-bold" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"&gt;<br/>
+          &lt;path fill="none" d="M0 0h24v24H0z"&gt;&lt;/path&gt;&lt;path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"&gt;&lt;/path&gt;<br/>
+         &lt;/svg&gt;&lt;/a&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="flex flex-col px-5 py-5 font-m2 m-auto h-screen"&gt;<br/>
+      &lt;h2 class="titles-m2 pb-10 border-b"&gt;Configuración de los Grupos de Criterios&lt;/h2&gt;<br/>
+      &lt;div class="flex flex-col py-5 items-center w-full h-full"&gt;<br/>
+       &lt;h2 class="titles-m2 mb-10"&gt;Creación de Grupos de Clasificación:&lt;/h2&gt;<br/>
+       &lt;div class="grid grid-cols-2 gap-x-12 gap-y-20"&gt;<br/>
+        &lt;div class="flex flex-col"&gt;<br/>
+         &lt;span class="titles-configuracion-m2"&gt;Nombre del grupo&lt;/span&gt;&lt;input class="w-96 h-16 rounded-lg border border-gray-400 py-4 px-4 input-configuracion-m2 input-m2" type="text" placeholder="Type here" value="Grupo 2023-2"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="flex flex-col"&gt;<br/>
+         &lt;span class="titles-configuracion-m2"&gt;Descripcion del grupo&lt;/span&gt;&lt;input class="w-96 h-16 rounded-lg border border-gray-400 py-4 px-4 input-configuracion-m2 input-m2" type="text" placeholder="Type here" value="Descripion grupo"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="flex flex-col"&gt;<br/>
+         &lt;span class="titles-configuracion-m2"&gt;Criterio de clasificacion&lt;/span&gt;&lt;select name="criterio-clasificacion" required class="text-xl input-configuracion-m2 select-m2"&gt;&lt;option disabled&gt;Seleccione un rol&lt;/option&gt;&lt;option value="Calificacion"&gt;Calificacion&lt;/option&gt;&lt;option value="Servicios completados"&gt;Servicios completados&lt;/option&gt;&lt;option value="Amonestaciones"&gt;Amonestaciones&lt;/option&gt;&lt;/select&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="flex flex-col"&gt;<br/>
+         &lt;span class="titles-configuracion-m2"&gt;Valor criterio&lt;/span&gt;&lt;input class="w-96 h-16 rounded-lg border border-gray-400 py-4 px-4 input-configuracion-m2 input-m2" type="text" placeholder="Type here" value="200"&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="flex justify-evenly mt-10 w-full"&gt;<br/>
+        &lt;div class="flex gap-3 items-center"&gt;<br/>
+         &lt;button class="text-white px-4 py-3 rounded-xl border-none cursor-pointer bg-blue-500 hover:bg-blue-700  hover:duration-150 shadow-md hover:scale-105 text-xl"&gt;Guardar Información&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="flex gap-3 items-center"&gt;<br/>
+         &lt;button class="text-white px-4 py-3 rounded-xl border-none cursor-pointer bg-blue-500 hover:bg-blue-700  hover:duration-150 shadow-md hover:scale-105 text-xl"&gt;Reiniciar Proceso&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="mt-20"&gt;<br/>
+        &lt;h4 class="text-lime-500 text-xl"&gt;Exito al crear el grupo&lt;/h4&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;script src="/_next/static/chunks/react-refresh.js?ts=1700787934267"&gt;&lt;/script&gt;<br/>
+  &lt;script id="__NEXT_DATA__" type="application/json"&gt;{"props":{"pageProps":{}},"page":"/ClasificacionSocios/M2ConfigurarCriterios","query":{},"buildId":"development","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}&lt;/script&gt;<br/>
+  &lt;div id="__next-build-watcher" style="position: fixed; bottom: 10px; right: 20px; width: 0px; height: 0px; z-index: 99999;"&gt;&lt;/div&gt;&lt;next-route-announcer&gt;<br/>
+   &lt;p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; top: 0px; width: 1px; white-space: nowrap; overflow-wrap: normal;"&gt;&lt;/p&gt;<br/>
+  &lt;/next-route-announcer&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

@@ -33,17 +33,17 @@ public class FHStepDefinitionsTest {
         //usuario.can(BrowseTheWeb.with(driver));
     }
 
-    @Given("que me encuentro en la pagina principal de amazon")
+    @Given("que me encuentro en la pagina de Configurar criterios")
     public void paginaPrincipal(){
         usuario.can(BrowseTheWeb.with(driver));
     }
 
-    @When("busque un producto y lo seleccione y lo agregue al carrito")
+    @When("llene los campos y envie la informacion del formulario para crear grupos")
     public void nombreProducto(){
         usuario.attemptsTo(OpenThe.Browser(new UsuarioPage()));
     }
 
-    @Then("puedo ver como el numero de productos en el carrito cambia")
+    @Then("puedo ver un texto de exito")
     public void listaResultados(){
         usuario.should(seeThat(Validacion.theHomePage(), equalTo(true)));
     }

@@ -5,17 +5,19 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 
 import static com.amazon.certificacion.calidad.userinterfaces.UsuarioPage.CARRITO;
+import static com.amazon.certificacion.calidad.userinterfaces.UsuarioPage.TEXTO_EXITO;
 
 public class Validacion implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
-        String stringTemporal = Text.of(CARRITO).answeredBy(actor);
+        String stringTemporal = Text.of(TEXTO_EXITO).answeredBy(actor);
+        System.out.println("string"+stringTemporal);
 
-        if(stringTemporal.equalsIgnoreCase("1")){
-            System.out.println("exito 1");
+        if(stringTemporal.equalsIgnoreCase("Exito alM crear el grupo")){
+            System.out.println("Exito");
             return true;
         }
-        System.out.println("fracaso");
+        System.out.println("Fracaso");
         return false;
     }
     public static Validacion theHomePage(){
