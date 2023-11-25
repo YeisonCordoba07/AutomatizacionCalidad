@@ -17,7 +17,6 @@ public class ConfigurarCriteriosPage implements Interaction {
         actor.attemptsTo(Enter.theValue("Descripion grupo").into(UsuarioPage.INPUT_DESCRIPCION));
         actor.attemptsTo(Enter.theValue("200").into(UsuarioPage.INPUT_VALOR_CRITERIO));
         actor.attemptsTo(Click.on(BOTON_GUARDAR));
-        //actor.attemptsTo(Click.on(BUTTON_ADDTOCARD));
     }
 
     public static ConfigurarCriteriosPage go(){

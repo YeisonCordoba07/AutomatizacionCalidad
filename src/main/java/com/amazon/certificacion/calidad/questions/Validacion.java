@@ -4,7 +4,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 
-import static com.amazon.certificacion.calidad.userinterfaces.UsuarioPage.CARRITO;
 import static com.amazon.certificacion.calidad.userinterfaces.UsuarioPage.TEXTO_EXITO;
 
 public class Validacion implements Question<Boolean> {

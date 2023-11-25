@@ -40,6 +40,7 @@ public class FHStepDefinitionsTest {
 
     @When("llene los campos y envie la informacion del formulario para crear grupos")
     public void nombreProducto(){
+
         usuario.attemptsTo(OpenThe.Browser(new UsuarioPage()));
     }
 
